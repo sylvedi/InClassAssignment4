@@ -31,8 +31,8 @@ namespace InClassAssignment4
             int d1Value = d1.rollDie();
             int d2Value = d2.rollDie();
 
-            this.box1.Text = "" + d1Value.ToString();
-            this.box2.Text = d2Value.ToString();
+            this.box1.Text = " " + d1Value.ToString();
+            this.box2.Text = " " + d2Value.ToString();
 
             
 
