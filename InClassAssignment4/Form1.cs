@@ -12,6 +12,7 @@ namespace InClassAssignment4
 {
     public partial class Form1 : Form
     {
+        int counter = 0;
         public Form1()
         {
             InitializeComponent();
@@ -34,22 +35,35 @@ namespace InClassAssignment4
             this.box1.Text = " " + d1Value.ToString();
             this.box2.Text = " " + d2Value.ToString();
 
-            
-
+            //stop button from clicking when it gets snake eyes
             if (d1Value == 1 && d2Value == 1)
             {
                 this.result.Enabled = false;
+            }
+
+            counter++;
+            //label1.Text = counter.ToString();
+            //label1.Visible = false;
+
+            //display count.
+            if (d1Value == 1 && d2Value == 1)
+                    {
+                //label1.Visible = true;
+                //label1.Text = ("it took " + counter + " to get eye");
+
+               
+                MessageBox.Show("It took " + counter + " to get snake eyes!");
+            }
 
                 
 
-            }
             
-            
+        }
 
-            if (d1Value == 1 && d2Value == 1)
-            {
-                MessageBox.Show("It took " + " to get snake eyes");
-            }
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+            
+            
         }
     }
 }
