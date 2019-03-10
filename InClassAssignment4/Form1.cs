@@ -44,7 +44,7 @@ namespace InClassAssignment4
             {
                 this.result.Enabled = false;
             }
-
+            //count the clicks to get snake eyes
             counter++;
             //label1.Text = counter.ToString();
             //label1.Visible = false;
@@ -56,7 +56,7 @@ namespace InClassAssignment4
                 //label1.Visible = true;
                 //label1.Text = ("it took " + counter + " to get eye");
 
-               
+               //display counter
                 MessageBox.Show("It took " + counter + " to get snake eyes!");
             }
 
