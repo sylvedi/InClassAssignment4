@@ -18,7 +18,7 @@ namespace InClassAssignment4
 
         public int rollDie( )
         {
-            return rnd.Next() % numSides + 1;
+            return rnd.Next(1, numSides + 1);
         }
     }
 }

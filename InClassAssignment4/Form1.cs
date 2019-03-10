@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace InClassAssignment4
 {
+    //Sylvanus edi
+    //this is my work
+    //9/3/2019
     public partial class Form1 : Form
     {
         int counter = 0;
@@ -36,6 +39,7 @@ namespace InClassAssignment4
             this.box2.Text = " " + d2Value.ToString();
 
             //stop button from clicking when it gets snake eyes
+
             if (d1Value == 1 && d2Value == 1)
             {
                 this.result.Enabled = false;
@@ -46,6 +50,7 @@ namespace InClassAssignment4
             //label1.Visible = false;
 
             //display count.
+            //MessageBox.Show(d1Value.ToString(), d2Value.ToString());
             if (d1Value == 1 && d2Value == 1)
                     {
                 //label1.Visible = true;
